@@ -128,8 +128,8 @@ db.orders.insertMany([
 
 db.orders.find({})
 
-select *,sum(quantity) as today_order 
-from orders 
-where status = 'urgent'
-group by productName;
+// select *,sum(quantity) as today_order 
+// from orders 
+// where status = 'urgent'
+// group by productName;
 
