@@ -11,7 +11,7 @@ const app = express();
 
 // const MONGO_URL = "mongodb://localhost";
 // const MONGO_URL = "mongodb://127.0.0.1"; //  nodejs - 16+
-const MONGO_URL = "mongodb+srv://@cluster0.iavuebx.mongodb.net/"; // Atlas link for mongodb
+const MONGO_URL = "mongodb+srv://sanket:admin123@cluster0.iavuebx.mongodb.net/"; // Atlas link for mongodb
 
 // Node - MongoDB
 async function createConnection() {
@@ -62,7 +62,7 @@ app.post("/movies", express.json(), async function (req, res) {
   res.send(result);
 });
 
-app.listen(PORT);
+app.listen(PORT,`server is up and running in port ${PORT}`);
 app.use(express.json());
 
 // app.listen(3000)
